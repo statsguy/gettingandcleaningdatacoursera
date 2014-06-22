@@ -335,12 +335,13 @@ Codebook
     Mean of the standart deviation of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
 
 **activity** : Factor
+
     Name of the activity that a subject performed
-        WALKING
-        WALKING_UPSTAIRS
-        WALKING_DOWNSTAIRS
-        SITTING
-        STANDING
-        LAYING
+        WALKING .Subject is walking
+        WALKING_UPSTAIRS .Subject is walking upstairs
+        WALKING_DOWNSTAIRS .Subject is walking downstairs
+        SITTING .Subject is sitting
+        STANDING .Subject is standing
+        LAYING .Subject is laying
 
     
