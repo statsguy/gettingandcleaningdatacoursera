@@ -89,7 +89,17 @@ Codebook
 
     Id of the subject who performed the experiment
         1..30   .1 to 30
-        
+
+**activity** : Factor
+
+    Name of the activity that a subject performed
+        WALKING .Subject is walking
+        WALKING_UPSTAIRS .Subject is walking upstairs
+        WALKING_DOWNSTAIRS .Subject is walking downstairs
+        SITTING .Subject is sitting
+        STANDING .Subject is standing
+        LAYING .Subject is laying
+
 **tBodyAcc-mean()-X** : num
 
     Mean of X component of body acceleration signal in the time domain (normalized to 1)
@@ -353,15 +363,3 @@ Codebook
 **fBodyBodyGyroJerkMag-std()** : num
 
     Mean of the standart deviation of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
-
-**activity** : Factor
-
-    Name of the activity that a subject performed
-        WALKING .Subject is walking
-        WALKING_UPSTAIRS .Subject is walking upstairs
-        WALKING_DOWNSTAIRS .Subject is walking downstairs
-        SITTING .Subject is sitting
-        STANDING .Subject is standing
-        LAYING .Subject is laying
-
-    
