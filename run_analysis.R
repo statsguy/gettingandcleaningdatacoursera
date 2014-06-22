@@ -18,8 +18,8 @@ names(train_data$X) <- features$V2
 names(test_data$X) <- features$V2
 names(train_data$y) <- c("activity")
 names(test_data$y) <- c("activity")
-names(train_data$subject) <- c("subject_id")
-names(test_data$subject) <- c("subject_id")
+names(train_data$subject) <- c("subjectId")
+names(test_data$subject) <- c("subjectId")
 
 #Join the X, y, and subject dataframes for both train and test data 
 train_joined <- cbind(train_data$subject, train_data$X, train_data$y)
@@ -38,9 +38,9 @@ activity_labels <-read.csv("activity_labels.txt", header=FALSE, sep=" ")
 #Use descriptive activity names to name the activities in the data set 
 sub_joined_all$activity <- sapply(sub_joined_all$activity, function (x) { activity_labels$V2[x] } )
 
-#Melt the data so that "subject_id" and "activity" are the id variables, and rest are measure variables
-molten <- melt(sub_joined_all, id.vars=c("subject_id","activity"))
-#Compute the mean for each id variable, namely "subject_id" and "activity"
-tidy_data <- dcast(data=molten,formula= subject_id+activity~variable, fun.aggregate=mean)
+#Melt the data so that "subjecId" and "activity" are the id variables, and rest are measure variables
+molten <- melt(sub_joined_all, id.vars=c("subjectId","activity"))
+#Compute the mean for each id variable, namely "subjectId" and "activity"
+tidy_data <- dcast(data=molten,formula= subjectId+activity~variable, fun.aggregate=mean)
 
 write.table(x=tidy_data, file="tidy_dataset.txt", sep=" ", row.names=FALSE)
