@@ -103,5 +103,5 @@ write.table(x=tidy_data, file="tidy_dataset.txt", sep=" ", row.names=FALSE)
 The code has a file *run_analysis.R* script in the main directory that can be run as long as the Samsung data is in your working directory. Simply run this script without any argument. It will create an output file named *tidy_dataset.txt* which contains  the tidy dataset without row names and data in each row is seperated by a space. In order to load the data you can simply run
 
 ```r
-read.table(data="tidy_dataset.txt", sep=" ", header=TRUE)
+read.table(file="tidy_dataset.txt", sep=" ", header=TRUE)
 ```
