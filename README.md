@@ -39,7 +39,7 @@ test_data <- read_data("test")
 ```
 
 Then, column names of dataframes are changed to meaningful names. For this, *features.txt* file is loaded
-and feature names are used to name the columns. For the column corresponding to the activity, column name is changed to *activity*, and similarly, for the column corresponding to the subject ids, column name is changed to *subject_id*. 
+and feature names are used to name the columns. For the column corresponding to the activity, column name is changed to *activity*, and similarly, for the column corresponding to the subject ids, column name is changed to *subjectId*. 
 
 ```r
 features <- read.csv("features.txt", header=FALSE, sep=" ")
@@ -47,8 +47,8 @@ names(train_data$X) <- features$V2
 names(test_data$X) <- features$V2
 names(train_data$y) <- c("activity")
 names(test_data$y) <- c("activity")
-names(train_data$subject) <- c("subject_id")
-names(test_data$subject) <- c("subject_id")
+names(train_data$subject) <- c("subjectId")
+names(test_data$subject) <- c("subjectId")
 ```
 
 After changing the column names to meaningful names, list of dataframes are combined seperately to get a single training dataframe and a single test dataframe.
@@ -81,15 +81,15 @@ Then, activity column of the joined dataframe is updated
 sub_joined_all$activity <- sapply(sub_joined_all$activity, function (x) { activity_labels$V2[x] } )
 ```
 
-Tidy data is created by melting the dataframe such that *subject_id* and *activity* columns are 
+Tidy data is created by melting the dataframe such that *subjectId* and *activity* columns are 
 id columns and the rest are measure columns
 ```r
-molten <- melt(sub_joined_all, id.vars=c("subject_id","activity"))
+molten <- melt(sub_joined_all, id.vars=c("subjectId","activity"))
 ```
 and mean of each measure is computed.
 
 ```r
-tidy_data <- dcast(data=molten,formula= subject_id+activity~variable, fun.aggregate=mean)
+tidy_data <- dcast(data=molten,formula= subjectId+activity~variable, fun.aggregate=mean)
 ```
 
 Finally, tidy_data is written to a file named *tidy_dataset.txt*. Row names are removed and data is seperated by a space.
@@ -103,5 +103,5 @@ write.table(x=tidy_data, file="tidy_dataset.txt", sep=" ", row.names=FALSE)
 The code has a file *run_analysis.R* script in the main directory that can be run as long as the Samsung data is in your working directory. Simply run this script without any argument. It will create an output file named *tidy_dataset.txt* which contains  the tidy dataset without row names and data in each row is seperated by a space. In order to load the data you can simply run
 
 ```r
-read.table(file="tidy_dataset.txt", sep=" ", header=TRUE)
+read.table(file="tidy_dataset.txt", sep=" ", header=TRUE, check.names=FALSE)
 ```
