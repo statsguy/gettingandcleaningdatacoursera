@@ -65,10 +65,276 @@ has the average of each variable for each activity and each subject.
 Codebook
 ============================
 
-subjectId :int
+**subjectId** :int
+
     Id of the subject who performed the experiment
         1..30   .1 to 30
-activity : Factor
+        
+**tBodyAcc-mean()-X** : num
+
+    Mean of X component of body acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAcc-mean()-Y** : num
+
+    Mean of Y component of body acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAcc-mean()-Z** : num
+
+    Mean of Z component of body acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAcc-std()-X** : num
+
+    Mean of the standart deviation of X component of body acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAcc-std()-Y** : num
+
+    Mean of the standart deviation of X component of body acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAcc-std()-Z** : num
+
+    Mean of the standart deviation of X component of body acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAcc-mean()-X** : num
+
+    Mean of X component of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAcc-mean()-Y** : num
+
+    Mean of X component of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAcc-mean()-Z** : num
+
+    Mean of X component of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAcc-std()-X** : num
+
+    Mean of standart deviation of X component of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAcc-std()-Y** : num
+
+    Mean of standart deviation of Y component of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAcc-std()-Z** : num
+
+    Mean of standart deviation of Z component of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAccJerk-mean()-X** : num
+
+    Mean of the X component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
+    
+**tBodyAccJerk-mean()-Y** : num
+
+    Mean of the Y component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
+    
+**tBodyAccJerk-mean()-Z** : num
+
+    Mean of the Z component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
+    
+**tBodyAccJerk-std()-X** : num
+
+    Mean of the standart deviation of X component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
+    
+**tBodyAccJerk-std()-Y** : num
+
+    Mean of the standart deviation of Y component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
+    
+**tBodyAccJerk-std()-Z** : num
+
+    Mean of the standart deviation of Z component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
+    
+**tBodyGyro-mean()-X** : num
+
+    Mean of the X component of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyro-mean()-Y** : num
+
+    Mean of the Y component of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyro-mean()-Z** : num
+
+    Mean of the Z component of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyro-std()-X** : num
+   
+    Mean of the standart deviation X component of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyro-std()-Y** : num
+
+    Mean of the standart deviation Y component of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyro-std()-Z** : num
+ 
+    Mean of the standart deviation Z component of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyroJerk-mean()-X** : num
+
+    Mean of the X component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroJerk-mean()-Y** : num
+
+    Mean of the Y component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroJerk-mean()-Z** : num
+
+    Mean of the Z component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroJerk-std()-X** : num
+
+    Mean of the standart deviation of X component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroJerk-std()-Y** : num
+
+    Mean of the standart deviation of Y component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroJerk-std()-Z** : num
+ 
+    Mean of the standart deviation of Z component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyAccMag-mean()** : num
+
+    Mean of the magnitude of body acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAccMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of body acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAccMag-mean()** : num
+
+    Mean of the magnitude of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tGravityAccMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of gravity acceleration signal in the time domain (normalized to 1)
+    
+**tBodyAccJerkMag-mean()** : num
+
+    Mean of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyAccJerkMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroMag-mean()** : num
+
+    Mean of the magnitude of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyroMag-std()** : num
+
+    Mean of the standart deviation of magnitude of the gyroscope signal in the time domain (normalized to 1)
+    
+**tBodyGyroJerkMag-mean()** : num
+
+    Mean of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**tBodyGyroJerkMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
+    
+**fBodyAcc-mean()-X** : num
+
+    Mean of X component of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAcc-mean()-Y** : num
+
+    Mean of Y component of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAcc-mean()-Z** : num
+
+    Mean of Z component of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAcc-std()-X** : num
+
+    Mean of the standart deviation of X component of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAcc-std()-Y** : num
+
+    Mean of the standart deviation of X component of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAcc-std()-Z** : num
+
+    Mean of the standart deviation of X component of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAccJerk-mean()-X** : num
+
+    Mean of the X component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
+    
+**fBodyAccJerk-mean()-Y** : num
+
+    Mean of the Y component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
+    
+**fBodyAccJerk-mean()-Z** : num
+
+    Mean of the Z component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
+    
+**fBodyAccJerk-std()-X** : num
+
+    Mean of the standart deviation of X component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
+    
+**fBodyAccJerk-std()-Y** : num
+
+    Mean of the standart deviation of Y component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
+    
+**fBodyAccJerk-std()-Z** : num
+
+    Mean of the standart deviation of Z component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
+    
+**fBodyGyro-mean()-X** : num
+
+    Mean of the X component of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyGyro-mean()-Y** : num
+
+    Mean of the Y component of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyGyro-mean()-Z** : num
+
+    Mean of the Z component of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyGyro-std()-X** : num
+   
+    Mean of the standart deviation X component of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyGyro-std()-Y** : num
+
+    Mean of the standart deviation Y component of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyGyro-std()-Z** : num
+ 
+    Mean of the standart deviation Z component of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyAccMag-mean()** : num
+
+    Mean of the magnitude of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAccMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of body acceleration signal in the frequency domain (normalized to 1)
+    
+**fBodyAccJerkMag-mean()** : num
+
+    Mean of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
+    
+**fBodyAccJerkMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the fequency domain (normalized to 1)
+    
+**fBodyBodyGyroMag-mean()** : num
+
+    Mean of the magnitude of the gyroscope signal in the frequency domain (normalized to 1)
+    
+**fBodyBodyGyroMag-std()** : num
+
+    Mean of the standart deviation of magnitude of the gyroscope signal in the frequency domain (normalized to 1)
+
+**fBodyBodyGyroJerkMag-mean()** : num
+
+    Mean of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
+    
+**fBodyBodyGyroJerkMag-std()** : num
+
+    Mean of the standart deviation of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
+
+**activity** : Factor
     Name of the activity that a subject performed
         WALKING
         WALKING_UPSTAIRS
@@ -77,137 +343,4 @@ activity : Factor
         STANDING
         LAYING
 
-tBodyAcc-mean()-X : num
-    Mean of X component of body acceleration signal in the time domain (normalized to 1)
-tBodyAcc-mean()-Y : num
-    Mean of Y component of body acceleration signal in the time domain (normalized to 1)
-tBodyAcc-mean()-Z : num
-    Mean of Z component of body acceleration signal in the time domain (normalized to 1)
-tBodyAcc-std()-X : num
-    Mean of the standart deviation of X component of body acceleration signal in the time domain (normalized to 1)
-tBodyAcc-std()-Y : num
-    Mean of the standart deviation of X component of body acceleration signal in the time domain (normalized to 1)
-tBodyAcc-std()-Z : num
-    Mean of the standart deviation of X component of body acceleration signal in the time domain (normalized to 1)
-tGravityAcc-mean()-X : num
-    Mean of X component of gravity acceleration signal in the time domain (normalized to 1)
-tGravityAcc-mean()-Y : num
-    Mean of X component of gravity acceleration signal in the time domain (normalized to 1)
-tGravityAcc-mean()-Z : num
-    Mean of X component of gravity acceleration signal in the time domain (normalized to 1)
-tGravityAcc-std()-X : num
-    Mean of standart deviation of X component of gravity acceleration signal in the time domain (normalized to 1)
-tGravityAcc-std()-Y : num
-    Mean of standart deviation of Y component of gravity acceleration signal in the time domain (normalized to 1)
-tGravityAcc-std()-Z : num
-    Mean of standart deviation of Z component of gravity acceleration signal in the time domain (normalized to 1)
-tBodyAccJerk-mean()-X : num
-    Mean of the X component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
-tBodyAccJerk-mean()-Y : num
-    Mean of the Y component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
-tBodyAccJerk-mean()-Z : num
-    Mean of the Z component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
-tBodyAccJerk-std()-X : num
-    Mean of the standart deviation of X component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
-tBodyAccJerk-std()-Y : num
-    Mean of the standart deviation of Y component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
-tBodyAccJerk-std()-Z : num
-    Mean of the standart deviation of Z component of the body linear acceleration that were derived in time to obtain Jerk signals (normalized to 1)
-tBodyGyro-mean()-X : num
-    Mean of the X component of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyro-mean()-Y : num
-    Mean of the Y component of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyro-mean()-Z : num
-    Mean of the Z component of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyro-std()-X : num   
-    Mean of the standart deviation X component of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyro-std()-Y : num
-    Mean of the standart deviation Y component of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyro-std()-Z : num 
-    Mean of the standart deviation Z component of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyroJerk-mean()-X : num
-    Mean of the X component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroJerk-mean()-Y : num
-    Mean of the Y component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroJerk-mean()-Z : num
-    Mean of the Z component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroJerk-std()-X : num
-    Mean of the standart deviation of X component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroJerk-std()-Y : num
-    Mean of the standart deviation of Y component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroJerk-std()-Z : num 
-    Mean of the standart deviation of Z component of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyAccMag-mean() : num
-    Mean of the magnitude of body acceleration signal in the time domain (normalized to 1)
-tBodyAccMag-std() : num
-    Mean of the standart deviation of the magnitude of body acceleration signal in the time domain (normalized to 1)
-tGravityAccMag-mean() : num
-    Mean of the magnitude of gravity acceleration signal in the time domain (normalized to 1)
-tGravityAccMag-std() : num
-    Mean of the standart deviation of the magnitude of gravity acceleration signal in the time domain (normalized to 1)
-tBodyAccJerkMag-mean() : num
-    Mean of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyAccJerkMag-std() : num
-    Mean of the standart deviation of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroMag-mean() : num
-    Mean of the magnitude of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyroMag-std() : num
-    Mean of the standart deviation of magnitude of the gyroscope signal in the time domain (normalized to 1)
-tBodyGyroJerkMag-mean() : num
-    Mean of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-tBodyGyroJerkMag-std() : num
-    Mean of the standart deviation of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the time domain (normalized to 1)
-fBodyAcc-mean()-X : num
-    Mean of X component of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAcc-mean()-Y : num
-    Mean of Y component of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAcc-mean()-Z : num
-    Mean of Z component of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAcc-std()-X : num
-    Mean of the standart deviation of X component of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAcc-std()-Y : num
-    Mean of the standart deviation of X component of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAcc-std()-Z : num
-    Mean of the standart deviation of X component of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAccJerk-mean()-X : num
-    Mean of the X component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
-fBodyAccJerk-mean()-Y : num
-    Mean of the Y component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
-fBodyAccJerk-mean()-Z : num
-    Mean of the Z component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
-fBodyAccJerk-std()-X : num
-    Mean of the standart deviation of X component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
-fBodyAccJerk-std()-Y : num
-    Mean of the standart deviation of Y component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
-fBodyAccJerk-std()-Z : num
-    Mean of the standart deviation of Z component of the body linear acceleration that were derived to obtain Jerk signals in frequency domain (normalized to 1)
-fBodyGyro-mean()-X : num
-    Mean of the X component of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyGyro-mean()-Y : num
-    Mean of the Y component of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyGyro-mean()-Z : num
-    Mean of the Z component of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyGyro-std()-X : num   
-    Mean of the standart deviation X component of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyGyro-std()-Y : num
-    Mean of the standart deviation Y component of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyGyro-std()-Z : num 
-    Mean of the standart deviation Z component of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyAccMag-mean() : num
-    Mean of the magnitude of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAccMag-std() : num
-    Mean of the standart deviation of the magnitude of body acceleration signal in the frequency domain (normalized to 1)
-fBodyAccJerkMag-mean() : num
-    Mean of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
-fBodyAccJerkMag-std() : num
-    Mean of the standart deviation of the magnitude of the body linear acceleration that were derived in time to obtain Jerk signals in the fequency domain (normalized to 1)
-
-fBodyBodyGyroMag-mean() : num
-    Mean of the magnitude of the gyroscope signal in the frequency domain (normalized to 1)
-fBodyBodyGyroMag-std() : num
-    Mean of the standart deviation of magnitude of the gyroscope signal in the frequency domain (normalized to 1)
-
-fBodyBodyGyroJerkMag-mean() : num
-    Mean of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
-fBodyBodyGyroJerkMag-std() : num
-    Mean of the standart deviation of the magnitude of the angular velocity that were derived in time to obtain Jerk signals in the frequency domain (normalized to 1)
+    
